@@ -7,16 +7,16 @@ label?: string;
 draggable?: boolean;
 }
 @Component({
-  selector: 'app-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.css']
+  selector: 'app-liquidez',
+  templateUrl: './liquidez.component.html',
+  styleUrls: ['./liquidez.component.css']
 })
-export class MapsComponent implements OnInit {
+export class liquidezComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-      const myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+      const myLatlng = new google.liquidez.LatLng(40.748817, -73.985428);
       const mapOptions = {
           zoom: 13,
           center: myLatlng,
@@ -40,8 +40,8 @@ export class MapsComponent implements OnInit {
               {'featureType': 'poi.business', 'stylers': [{'visibility': 'simplified'}]}
           ]
       };
-      const map = new google.maps.Map(document.getElementById('map'), mapOptions);
-      const Marker = new google.maps.Marker({
+      const map = new google.liquidez.Map(document.getElementById('map'), mapOptions);
+      const Marker = new google.liquidez.Marker({
           position: myLatlng,
           title: 'Hello World!'
       });

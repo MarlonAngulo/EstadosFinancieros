@@ -12,26 +12,24 @@ import { LbdModule } from './lbd/lbd.module';
 
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home/home.component';
-import { UserComponent } from './user/user.component';
-import { TablesComponent } from './tables/tables.component';
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { MapsComponent } from './maps/maps.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
+import { coberturaComponent } from './cobertura/cobertura.component';
+import { endeudamientoComponent } from './endeudamiento/endeudamiento.component';
+import { estadosComponent } from './estados/estados.component';
+import { liquidezComponent } from './liquidez/liquidez.component';
+import { notasComponent } from './notas/notas.component';
+import { periodosComponent } from './periodos/periodos.component';
+import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    UserComponent,
-    TablesComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent
+    coberturaComponent,
+    endeudamientoComponent,
+    estadosComponent,
+    liquidezComponent,
+    notasComponent,
+    periodosComponent,
+    rentabilidadComponent
 
   ],
   imports: [

@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 declare var $:any;
 
 @Component({
-  selector: 'app-notifications',
-  templateUrl: './notifications.component.html',
-  styleUrls: ['./notifications.component.css']
+  selector: 'app-rentabilidad',
+  templateUrl: './rentabilidad.component.html',
+  styleUrls: ['./rentabilidad.component.css']
 })
-export class NotificationsComponent implements OnInit {
+export class rentabilidadComponent implements OnInit {
 
   constructor() { }
 
