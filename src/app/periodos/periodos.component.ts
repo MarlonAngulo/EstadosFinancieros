@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./periodos.component.css']
 })
 export class periodosComponent implements OnInit {
+  
 
   constructor() { }
 
