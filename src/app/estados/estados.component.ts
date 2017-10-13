@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppGlobals} from "../globals";
 
 @Component({
   selector: 'app-estados',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class estadosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public _global: AppGlobals
+  ) { }
 
   ngOnInit() {
   }
