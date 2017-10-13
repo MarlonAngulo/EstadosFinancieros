@@ -11,6 +11,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { LbdModule } from './lbd/lbd.module';
 
 import { AppComponent } from './app.component';
+import { AppGlobals } from'./globals';
 
 import { coberturaComponent } from './cobertura/cobertura.component';
 import { endeudamientoComponent } from './endeudamiento/endeudamiento.component';
@@ -43,7 +44,7 @@ import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
     AppRoutingModule,
     LbdModule
   ],
-  providers: [],
+  providers: [AppGlobals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
