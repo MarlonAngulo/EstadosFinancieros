@@ -22,9 +22,9 @@ export class AppGlobals
   public pasivoCirculante1: Number = 1000;
   public cuentasPorPagar1: Number = 2500;
   public pasivoAlargoPlazo1: Number = 7500;
-  public totalPasivoAntPra1: Number = 10000;
+  public totalPasivo1: Number = 10000;
   public Patrimonio1: Number = 2500;
-  public totalPasivoPosPran1: Number = 12500;
+  public totalPasivomasPatri1: Number = 12500;
 //--------------------------------------------------------------------------------------------------------------------
 
 
@@ -47,8 +47,8 @@ public totalActivo2: Number = 12900;
 public pasivoCirculante2: Number = 0;
 public cuentasPorPagar2: Number = 2600;
 public pasivoAlargoPlazo2: Number = 7800;
-public totalPasivoAntPra2: Number = 10400;
+public totalPasivo2: Number = 10400;
 public Patrimonio2: Number = 2300;
-public totalPasivoPosPran2: Number = 12700;
+public totalPasivomasPatri2: Number = 12700;
 //--------------------------------------------------------------------------------------------------------------------
 }

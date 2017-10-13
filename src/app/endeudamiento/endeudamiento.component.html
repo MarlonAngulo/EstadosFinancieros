@@ -1,3 +1,23 @@
 <div class="main-content">
-  
+  <table  class="table table-striped" border="1">
+
+    <tr>
+      <td> Periodos</td>
+      <td> Primer Periodo</td>
+      <td> Segundo Periodo</td>
+    </tr>
+    <tr>
+      <td> Razón de endeudamiento </td>
+      <td style="text-aling:right"> {{ _global.totalPasivo1/_global.totalActivo1}}  </td>
+      <td style="text-aling:right"> {{ _global.totalPasivo2 /_global.totalActivo2 }}  </td>
+    </tr>
+     <tr>
+       <td> Razón pasivo capital </td>
+       <td style="text-aling:right"> {{ _global.pasivoAlargoPlazo1 / (_global.totalActivo1-_global.totalPasivo1) }} </td>
+       <td style="text-aling:right"> {{ _global.pasivoAlargoPlazo2 / (_global.totalActivo1-_global.totalPasivo2) }} </td>
+     </tr>
+
+ </table>
+
+
 </div>
