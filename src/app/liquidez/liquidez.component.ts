@@ -25,7 +25,7 @@ public  CapiNetTrab: Number;
 
   capitalNetoDeTrabajo()
   {
-    
+
     //this.CapiNetTrab = (Number(this._global.totalActivoCirculante1)) - (Number(this._global.pasivoCirculante1));
   //  console.log(this.CapiNetTrab);
   }

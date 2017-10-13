@@ -25,6 +25,9 @@ export class AppGlobals
   public totalPasivo1: Number = 10000;
   public Patrimonio1: Number = 2500;
   public totalPasivomasPatri1: Number = 12500;
+  public VentasCredito1: Number = 2500;
+  public ComprasCredito1: Number = 12500;
+
 //--------------------------------------------------------------------------------------------------------------------
 
 
@@ -50,5 +53,7 @@ public pasivoAlargoPlazo2: Number = 7800;
 public totalPasivo2: Number = 10400;
 public Patrimonio2: Number = 2300;
 public totalPasivomasPatri2: Number = 12700;
+public VentasCredito2: Number = 2500;
+public ComprasCredito2: Number = 12500;
 //--------------------------------------------------------------------------------------------------------------------
 }
