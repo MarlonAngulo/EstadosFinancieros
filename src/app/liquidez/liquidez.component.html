@@ -1,3 +1,49 @@
 <div id="map">
-{{ _global.totalActivoCirculante1 - _global.cuentasPorPagar1 }}
+
+  <table  class="table table-striped" border="1">
+
+    <tr>
+      <td> Periodo</td>
+      <td> Primer Periodo</td>
+      <td> Segundo Periodo</td>
+    </tr>
+    <tr>
+      <td> Capital neto de trabajo </td>
+      <td style="text-aling:right"> {{ _global.totalActivoCirculante1 - _global.cuentasPorPagar1 }}  </td>
+      <td style="text-aling:right"> {{ _global.totalActivoCirculante2 - _global.cuentasPorPagar2 }}  </td>
+    </tr>
+     <tr>
+       <td> Índice de solvencia </td>
+       <td style="text-aling:right"> {{ _global.totalActivoCirculante1 / _global.cuentasPorPagar1 }} </td>
+       <td style="text-aling:right"> {{ _global.totalActivoCirculante2 / _global.cuentasPorPagar2 }} </td>
+     </tr>
+     <tr>
+       <td> Prueba ácida </td>
+       <td style="text-aling:right"> {{ (_global.totalActivoCirculante1 - _global.inventarios1) / _global.cuentasPorPagar1 }} </td>
+       <td style="text-aling:right"> {{ (_global.totalActivoCirculante2 - _global.inventarios2) / _global.cuentasPorPagar2 }}  </td>
+     </tr>
+     <tr>
+       <td> Rotación de inventarios </td>
+       <td style="text-aling:right">  </td>
+       <td style="text-aling:right">  </td>
+     </tr>
+     <tr>
+       <td> Rotación de cartera </td>
+       <td style="text-aling:right">  </td>
+       <td style="text-aling:right">  </td>
+     </tr>
+     <tr>
+       <td> Rotación de cuentas por pagar </td>
+       <td style="text-aling:right">  </td>
+       <td style="text-aling:right">  </td>
+     </tr>
+
+
+
+
+ </table>
+
+
+
+
 </div>

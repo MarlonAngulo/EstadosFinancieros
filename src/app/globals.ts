@@ -31,24 +31,24 @@ export class AppGlobals
 //-------------------------------------------------variables periodo 2------------------------------------------------------
 //Estado de resultados
 public ventas2: Number = 2015;
-public costoVentas2: Number = 7.000;
-public utilidadBruta2: Number = 5.000;
-public gastosOperacion2: Number = 2.600;
-public utAntesIntEimp2: Number = 2.500;
+public costoVentas2: Number = 7000;
+public utilidadBruta2: Number = 5000;
+public gastosOperacion2: Number = 2600;
+public utAntesIntEimp2: Number = 2500;
 public gastosfinancieros2: Number = 450;
-public utilidadNeta2: Number = 1.950;
+public utilidadNeta2: Number = 1950;
 //Balance general
 public Efectivo2: Number = 2100;
 public cuentasPorCobrar2: Number = 1200;
-public inventarios2: Number = 1.100;
+public inventarios2: Number = 1100;
 public totalActivoCirculante2: Number = 4400;
-public activoFijoNeto2: Number = 8.500;
+public activoFijoNeto2: Number = 8500;
 public totalActivo2: Number = 12900;
 public pasivoCirculante2: Number = 0;
-public cuentasPorPagar2: Number = 2.600;
-public pasivoAlargoPlazo2: Number = 7.800;
-public totalPasivoAntPra2: Number = 10.400;
-public Patrimonio2: Number = 2.300;
-public totalPasivoPosPran2: Number = 12.700;
+public cuentasPorPagar2: Number = 2600;
+public pasivoAlargoPlazo2: Number = 7800;
+public totalPasivoAntPra2: Number = 10400;
+public Patrimonio2: Number = 2300;
+public totalPasivoPosPran2: Number = 12700;
 //--------------------------------------------------------------------------------------------------------------------
 }
