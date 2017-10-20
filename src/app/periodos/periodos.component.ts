@@ -11,9 +11,9 @@ export class periodosComponent implements OnInit {
   costoVentas;
 
 
-  f1:String='2015/01/01';
-  f2:String='2016/01/01';
-  
+  f1:String;
+  f2:String;
+
   fI2:String;
   fF2:String;
   constructor(
@@ -24,23 +24,23 @@ export class periodosComponent implements OnInit {
   ngOnInit() {
 
 
-    this.f1 = "2015/12/08";
+    this.f1 = this.f1;
     this.f1 = this.f1.replace(/\//g, "-");
-    this.f2 = "2016/08/20";
+    this.f2 = this.f2;
     this.f2 = this.f2.replace(/\//g, "-");
 
 
-    this.fI2 = "2014/12/08";
+    this.fI2 = this.fI2;
     this.fI2 = this.fI2.replace(/\//g, "-");
-    this.fF2 = "2015/08/20";
+    this.fF2 = this.fF2;
     this.fF2 = this.fF2.replace(/\//g, "-");
-
+    console.log(this.f1);
 
 //----------------------------------primer periodo-----------------------------------------------------------------
     //-----------------------------ventas-------------------------------------------------------
     this.salesService.getVentas(this.f1, this.f2).subscribe(data => {
       this._global.ventas1 = data[0].total; // Assign array to use in HTML
-      console.log(this._global.ventas1);
+
     });
 //---------------------------------------------------------------------------------------------
 
