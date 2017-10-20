@@ -8,7 +8,7 @@ import { SalesService } from '../services/sales.service';
   styleUrls: ['./periodos.component.css']
 })
 export class periodosComponent implements OnInit {
-  sales;
+  costoVentas;
 
   constructor(
     public _global: AppGlobals,
@@ -19,7 +19,7 @@ export class periodosComponent implements OnInit {
 
     this.salesService.getAllSales('2015-01-01', '2016-01-01').subscribe(data => {
       console.log(data);
-      this.sales = data.sales; // Assign array to use in HTML
+      this.costoVentas = data.totalCostoVentas; // Assign array to use in HTML
     });
 
 
