@@ -1,32 +1,33 @@
 import {Injectable} from '@angular/core';
 
+
 @Injectable()
 export class AppGlobals
 {
   //-------------------------------------------------variables periodo 1------------------------------------------------------
   //Estado de resultados
-  public ventas1: Number = 2014;
-  public costoVentas1: Number = 6000;
-  public utilidadBruta1: Number = 4000;
-  public gastosOperacion1: Number = 2500;
-  public utAntesIntEimp1: Number = 1500;
-  public gastosfinancieros1: Number = 500;
-  public utilidadNeta1: Number = 1000;
+  public ventas1: Number = 0;
+  public costoVentas1: Number = 0;
+  public utilidadBruta1: Number = 0;//resta de ventas menos costo de ventas
+  public gastosOperacion1: Number = 0;
+  public utAntesIntEimp1: Number = 1500;//valor  que no existe en la base de datos por eso queda estatico
+  public gastosfinancieros1: Number = 500;//valor  que no existe en la base de datos por eso queda estatico
+  public utilidadNeta1: Number = 0;
 //Balance general
-  public Efectivo1: Number = 2000;
-  public cuentasPorCobrar1: Number = 1500;
-  public inventarios1: Number = 1000;
-  public totalActivoCirculante1: Number = 4500;
-  public activoFijoNeto1: Number = 8000;
-  public totalActivo1: Number = 12500;
-  public pasivoCirculante1: Number = 1000;
-  public cuentasPorPagar1: Number = 2500;
-  public pasivoAlargoPlazo1: Number = 7500;
-  public totalPasivo1: Number = 10000;
-  public Patrimonio1: Number = 2500;
-  public totalPasivomasPatri1: Number = 12500;
-  public VentasCredito1: Number = 2500;
-  public ComprasCredito1: Number = 12500;
+  public Efectivo1: Number = 2000;//valor  que no existe en la base de datos por eso queda estatico
+  public cuentasPorCobrar1: Number = 0;
+  public inventarios1: Number = 0;
+  public totalActivoCirculante1: Number = 4500;//valor  que no existe en la base de datos por eso queda estatico
+  public activoFijoNeto1: Number = 8000;//valor  que no existe en la base de datos por eso queda estatico
+  public totalActivo1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
+  public pasivoCirculante1: Number = 1000;//valor  que no existe en la base de datos por eso queda estatico
+  public cuentasPorPagar1: Number = 0;
+  public pasivoAlargoPlazo1: Number = 7500;//valor  que no existe en la base de datos por eso queda estatico
+  public totalPasivo1: Number = 10000;//valor  que no existe en la base de datos por eso queda estatico
+  public Patrimonio1: Number = 2500;//valor  que no existe en la base de datos por eso queda estatico
+  public totalPasivomasPatri1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
+  public VentasCredito1: Number = 2500;//valor  que no existe en la base de datos por eso queda estatico
+  public ComprasCredito1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
 
 //--------------------------------------------------------------------------------------------------------------------
 
@@ -56,4 +57,12 @@ public totalPasivomasPatri2: Number = 12700;
 public VentasCredito2: Number = 2500;
 public ComprasCredito2: Number = 12500;
 //--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 }

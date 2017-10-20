@@ -9,8 +9,44 @@ export class SalesService {
   domain = environment.domain;
   constructor(private http: Http) { }
 
-  getAllSales(f1, f2) {
-  return this.http.get(this.domain + 'Sales/costoVentas/' + f1 + '/' + f2, this.options).map(res => res.json());
-}
+  getVentas(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/ventas/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getCostoVentas(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/costoVentas/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getGastosOperacion(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/gastosOperacion/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getUtilidadNeta(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/UtilidadNeta/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getCuentas_por_cobrar(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/Cuentas_por_cobrar/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getInventario(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/Inventario/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getCuentas_por_pagar(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/Cuentas_por_pagar/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+
+
+
+
 
 }
