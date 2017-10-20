@@ -21,6 +21,10 @@ import { notasComponent } from './notas/notas.component';
 import { periodosComponent } from './periodos/periodos.component';
 import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
 
+import { SalesService } from './services/sales.service';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +48,7 @@ import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
     AppRoutingModule,
     LbdModule
   ],
-  providers: [AppGlobals],
+  providers: [AppGlobals, SalesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
