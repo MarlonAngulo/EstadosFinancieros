@@ -20,7 +20,7 @@ export class AppGlobals
   public totalActivoCirculante1: Number = 4500;//valor  que no existe en la base de datos por eso queda estatico
   public activoFijoNeto1: Number = 8000;//valor  que no existe en la base de datos por eso queda estatico
   public totalActivo1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
-  public pasivoCirculante1: Number = 1000;//valor  que no existe en la base de datos por eso queda estatico
+  public pasivoCirculante1: Number = 0;//el pasivo circulante son las cuentas por pagar
   public cuentasPorPagar1: Number = 0;
   public pasivoAlargoPlazo1: Number = 7500;//valor  que no existe en la base de datos por eso queda estatico
   public totalPasivo1: Number = 10000;//valor  que no existe en la base de datos por eso queda estatico
@@ -34,22 +34,22 @@ export class AppGlobals
 
 //-------------------------------------------------variables periodo 2------------------------------------------------------
 //Estado de resultados
-public ventas2: Number = 2015;
-public costoVentas2: Number = 7000;
-public utilidadBruta2: Number = 5000;
-public gastosOperacion2: Number = 2600;
+public ventas2: Number = 0;
+public costoVentas2: Number = 0;
+public utilidadBruta2: Number = 0;
+public gastosOperacion2: Number = 0;
 public utAntesIntEimp2: Number = 2500;
 public gastosfinancieros2: Number = 450;
-public utilidadNeta2: Number = 1950;
+public utilidadNeta2: Number = 0;
 //Balance general
 public Efectivo2: Number = 2100;
-public cuentasPorCobrar2: Number = 1200;
-public inventarios2: Number = 1100;
+public cuentasPorCobrar2: Number = 0;
+public inventarios2: Number = 0;
 public totalActivoCirculante2: Number = 4400;
 public activoFijoNeto2: Number = 8500;
 public totalActivo2: Number = 12900;
-public pasivoCirculante2: Number = 0;
-public cuentasPorPagar2: Number = 2600;
+public pasivoCirculante2: Number = 0;//el pasivo circulante son las cuentas por pagar
+public cuentasPorPagar2: Number = 0;
 public pasivoAlargoPlazo2: Number = 7800;
 public totalPasivo2: Number = 10400;
 public Patrimonio2: Number = 2300;
