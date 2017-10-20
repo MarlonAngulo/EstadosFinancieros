@@ -8,10 +8,10 @@
 <body>
   <div class="main-content" >
         <h1>Inicio Primer periodo</h1>
-      <input type="date" name="fecha">
+      <input type="date" [ngModel] ="f1 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event">
 
       <h1>Fin Primer periodo</h1>
-      <input type="date" name="fecha">
+      <input type="date" [ngModel] ="f2 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event">
   </div>
 
 

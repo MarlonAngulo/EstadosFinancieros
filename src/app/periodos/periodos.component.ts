@@ -11,9 +11,9 @@ export class periodosComponent implements OnInit {
   costoVentas;
 
 
-  f1:String;
-  f2:String;
-
+  f1:String='2015/01/01';
+  f2:String='2016/01/01';
+  
   fI2:String;
   fF2:String;
   constructor(
