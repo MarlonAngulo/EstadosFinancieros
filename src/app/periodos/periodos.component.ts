@@ -21,20 +21,11 @@ export class periodosComponent implements OnInit {
     private salesService: SalesService
   ) { }
 
-<<<<<<< HEAD
 calcularPrimerPeriodo()
 {
     //this.f1 = "2015/12/08";
     this.f1 = this.f1.replace(/\//g, "-");
     //this.f2 = "2016/08/20";
-=======
-  ngOnInit() {
-
-
-    this.f1 = this.f1;
-    this.f1 = this.f1.replace(/\//g, "-");
-    this.f2 = this.f2;
->>>>>>> e5bd396448515318dafc7ca5f19ba29939cf6d84
     this.f2 = this.f2.replace(/\//g, "-");
 
     //----------------------------------primer periodo-----------------------------------------------------------------
@@ -60,7 +51,6 @@ calcularPrimerPeriodo()
     });
     //---------------------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 
     //-----------------------------UtilidadNeta-------------------------------------------------------
     this.salesService.getUtilidadNeta(this.f1, this.f2).subscribe(data => {
@@ -73,19 +63,6 @@ calcularPrimerPeriodo()
     this.salesService.getCuentas_por_cobrar(this.f1, this.f2).subscribe(data => {
       this._global.cuentasPorCobrar1 = data[0].Cuentas_por_cobrar; // Assign array to use in HTML
       console.log(this._global.cuentasPorCobrar1);
-=======
-    this.fI2 = this.fI2;
-    this.fI2 = this.fI2.replace(/\//g, "-");
-    this.fF2 = this.fF2;
-    this.fF2 = this.fF2.replace(/\//g, "-");
-    console.log(this.f1);
-
-//----------------------------------primer periodo-----------------------------------------------------------------
-    //-----------------------------ventas-------------------------------------------------------
-    this.salesService.getVentas(this.f1, this.f2).subscribe(data => {
-      this._global.ventas1 = data[0].total; // Assign array to use in HTML
-
->>>>>>> e5bd396448515318dafc7ca5f19ba29939cf6d84
     });
     //---------------------------------------------------------------------------------------------
 
