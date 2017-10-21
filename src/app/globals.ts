@@ -6,6 +6,12 @@ export class AppGlobals
 {
   //-------------------------------------------------variables periodo 1------------------------------------------------------
   //Estado de resultados
+  public f1:String='2015-01-01';
+  public f2:String='2015-12-30';
+
+  public fI2:String='2016-01-01';
+  public fF2:String='2016-12-31';
+
   public ventas1: Number = 0;
   public costoVentas1: Number = 0;
   public utilidadBruta1: Number = 0;//resta de ventas menos costo de ventas

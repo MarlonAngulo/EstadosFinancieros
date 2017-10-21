@@ -8,21 +8,21 @@
 <body>
   <div class="main-content" >
         <h1>Inicio Primer periodo</h1>
-      <input type="date" [ngModel] ="f1 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event" >
+      <input type="date" [(ngModel)] ="_global.f1">
 
       <h1>Fin Primer periodo</h1>
-      <input type="date" [ngModel] ="f2 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event">
+      <input type="date" [(ngModel)] ="_global.f2">
       <p></p>
-      <button (click)="calcularPrimerPeriodo()">Realizar Calculos 1° periodo </button>
+      <button (click)="calcularPrimerPeriodo()">Realizar Calculos 1° periodo {{_global.f2}}</button>
   </div>
 
 
   <div class="main-content" >
         <h1>Inicio Segundo periodo</h1>
-      <input type="date" [ngModel] ="fI2 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event">
+      <input type="date" [(ngModel)] ="_global.fI2">
 
       <h1>Fin Segundo periodo</h1>
-      <input type="date" [ngModel] ="fF2 | date:'yyyy-MM-dd'" (ngModelChange)="dt = $event">
+      <input type="date" [(ngModel)] ="_global.fF2">
       <p></p>
       <button (click)="calcularSegundoPeriodo()">Realizar Calculos 2° periodo</button>
   </div>
