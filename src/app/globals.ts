@@ -6,8 +6,8 @@ export class AppGlobals
 {
   //-------------------------------------------------variables periodo 1------------------------------------------------------
   //Estado de resultados
-  public f1:String='2015-01-01';
-  public f2:String='2015-12-30';
+  public f1:String='2015-12-08';
+  public f2:String='2016-08-20';
 
   public fI2:String='2016-01-01';
   public fF2:String='2016-12-31';
@@ -23,9 +23,9 @@ export class AppGlobals
   public Efectivo1: Number = 2000;//valor  que no existe en la base de datos por eso queda estatico
   public cuentasPorCobrar1: Number = 0;
   public inventarios1: Number = 0;
-  public totalActivoCirculante1: Number = 4500;//valor  que no existe en la base de datos por eso queda estatico
+  public totalActivoCirculante1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
   public activoFijoNeto1: Number = 8000;//valor  que no existe en la base de datos por eso queda estatico
-  public totalActivo1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
+  public totalActivo1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
   public pasivoCirculante1: Number = 0;//el pasivo circulante son las cuentas por pagar
   public cuentasPorPagar1: Number = 0;
   public pasivoAlargoPlazo1: Number = 7500;//valor  que no existe en la base de datos por eso queda estatico

@@ -67,8 +67,8 @@
 
         <tr>
           <td> Total activo circulante </td>
-          <td style="text-aling:right"> {{_global.totalActivoCirculante1}}  </td>
-          <td style="text-aling:right"> {{_global.totalActivoCirculante2}}  </td>
+          <td style="text-aling:right"> {{_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1}}  </td>
+          <td style="text-aling:right"> {{_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2}}  </td>
         </tr>
          <tr>
            <td> Activo fijo neto </td>
@@ -77,8 +77,8 @@
          </tr>
          <tr>
            <td> Total activo </td>
-           <td style="text-aling:right"> {{_global.totalActivo1}} </td>
-           <td style="text-aling:right"> {{_global.totalActivo2}} </td>
+           <td style="text-aling:right"> {{(_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1) + _global.activoFijoNeto1}} </td>
+           <td style="text-aling:right"> {{(_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2) + _global.activoFijoNeto2}} </td>
          </tr>
 
          <tr>
@@ -99,8 +99,8 @@
          </tr>
           <tr>
             <td> Total pasivo </td>
-            <td style="text-aling:right"> {{_global.totalPasivo1}} </td>
-            <td style="text-aling:right"> {{_global.totalPasivo2}} </td>
+            <td style="text-aling:right"> {{_global.cuentasPorPagar1 + _global.pasivoAlargoPlazo1}} </td>
+            <td style="text-aling:right"> {{_global.cuentasPorPagar2 + _global.pasivoAlargoPlazo2}} </td>
           </tr>
           <tr>
             <td> Patrimonio </td>
@@ -110,8 +110,8 @@
 
           <tr>
             <td> Total pasivo mas Patrimonio </td>
-            <td style="text-aling:right"> {{_global.totalPasivomasPatri1}} </td>
-            <td style="text-aling:right"> {{_global.totalPasivomasPatri2}} </td>
+            <td style="text-aling:right"> {{(_global.cuentasPorPagar1 + _global.pasivoAlargoPlazo1) +_global.Patrimonio1}} </td>
+            <td style="text-aling:right"> {{(_global.cuentasPorPagar2 + _global.pasivoAlargoPlazo2) +_global.Patrimonio2}} </td>
           </tr>
 
           <tr>
