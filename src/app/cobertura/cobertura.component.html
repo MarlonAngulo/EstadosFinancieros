@@ -7,14 +7,14 @@
       <td> Segundo Periodo</td>
     </tr>
     <tr>
-      <td> Razón de endeudamiento </td>
-      <td style="text-aling:right"> {{0}}  </td>
-      <td style="text-aling:right"> {{0}}  </td>
+      <td> Cobertura total del pasivo </td>
+      <td style="text-aling:right"> {{(((_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1)/_global.RecCxP).toFixed(3)}}  </td>
+      <td style="text-aling:right"> {{(((_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2)/_global.RecCxP2).toFixed(3)}}  </td>
     </tr>
      <tr>
-       <td> Razón pasivo capital </td>
-       <td style="text-aling:right"> {{0}} </td>
-       <td style="text-aling:right"> {{0}} </td>
+       <td>  Razón de cobertura total </td>
+       <td style="text-aling:right"> {{(((_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1)/(_global.gastosOperacion1+_global.RecCxP)).toFixed(3)}} </td>
+       <td style="text-aling:right"> {{(((_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2)/(_global.gastosOperacion2+_global.RecCxP2)).toFixed(3)}} </td>
      </tr>
 
  </table>

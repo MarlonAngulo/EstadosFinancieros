@@ -32,6 +32,12 @@ calcularPrimerPeriodo()
           console.log(this._global.ventas1);
         });
     //---------------------------------------------------------------------------------------------
+    //-----------------------------RecCxP-------------------------------------------------------
+    this.salesService.getRecCxP(f1, f2).subscribe(data => {
+      this._global.RecCxP = data[0].RecCuentas_por_pagar; // Assign array to use in HTML
+console.log(this._global.RecCxP);
+    });
+//---------------------------------------------------------------------------------------------
 
     //-----------------------------CostoVentas-------------------------------------------------------
     this.salesService.getCostoVentas(f1, f2).subscribe(data => {
@@ -97,6 +103,14 @@ calcularSegundoPeriodo()
         console.log(this._global.ventas2);
       });
   //---------------------------------------------------------------------------------------------
+
+  //-----------------------------RecCxP-------------------------------------------------------
+  this.salesService.getRecCxP(f1, f2).subscribe(data => {
+    this._global.RecCxP2 = data[0].RecCuentas_por_pagar; // Assign array to use in HTML
+console.log(this._global.ventas2);
+  });
+//---------------------------------------------------------------------------------------------
+
 
   //-----------------------------CostoVentas-------------------------------------------------------
   this.salesService.getCostoVentas(f1, f2).subscribe(data => {

@@ -34,6 +34,7 @@ export class AppGlobals
   public totalPasivomasPatri1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
   public VentasCredito1: Number = 2500;//valor  que no existe en la base de datos por eso queda estatico
   public ComprasCredito1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
+  public RecCxP: Number = 0; //Recivo de cuentas por pagar de acuerdo a fechas
 
 //--------------------------------------------------------------------------------------------------------------------
 
@@ -62,6 +63,7 @@ public Patrimonio2: Number = 2300;
 public totalPasivomasPatri2: Number = 12700;
 public VentasCredito2: Number = 2500;
 public ComprasCredito2: Number = 12500;
+public RecCxP2: Number = 0; //Recivo de cuentas por pagar de acuerdo a fechas
 //--------------------------------------------------------------------------------------------------------------------
 
 

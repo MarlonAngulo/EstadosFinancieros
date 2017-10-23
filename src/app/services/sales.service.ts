@@ -13,6 +13,10 @@ export class SalesService {
   {
     return this.http.get(this.domain + 'Sales/ventas/' + f1 + '/' + f2, this.options).map(res => res.json());
   }
+  getRecCxP(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/RecivosCxP/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
 
   getCostoVentas(f1, f2)
   {
