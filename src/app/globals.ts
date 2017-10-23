@@ -16,7 +16,7 @@ export class AppGlobals
   public costoVentas1: Number = 0;
   public utilidadBruta1: Number = 0;//resta de ventas menos costo de ventas
   public gastosOperacion1: Number = 0;
-  public utAntesIntEimp1: Number = 1500;//valor  que no existe en la base de datos por eso queda estatico
+  public utAntesIntEimp1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
   public gastosfinancieros1: Number = 500;//valor  que no existe en la base de datos por eso queda estatico
   public utilidadNeta1: Number = 0;
 //Balance general

@@ -20,8 +20,8 @@
 
      <tr>
        <td> Utilidad bruta </td>
-       <td style="text-aling:right"> {{_global.utilidadBruta1}} </td>
-       <td style="text-aling:right"> {{_global.utilidadBruta2}} </td>
+       <td style="text-aling:right"> {{_global.ventas1 - _global.costoVentas1}} </td>
+       <td style="text-aling:right"> {{_global.ventas2 - _global.costoVentas2}} </td>
      </tr>
       <tr>
         <td> Gastos de operación </td>
@@ -31,8 +31,8 @@
 
       <tr>
         <td> Ut. antes int. e imp. </td>
-        <td style="text-aling:right"> {{_global.utAntesIntEimp1}} </td>
-        <td style="text-aling:right"> {{_global.utAntesIntEimp2}} </td>
+        <td style="text-aling:right"> {{(_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1}} </td>
+        <td style="text-aling:right"> {{(_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2}} </td>
       </tr>
        <tr>
          <td> Gastos financieros </td>
