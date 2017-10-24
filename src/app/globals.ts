@@ -17,7 +17,7 @@ export class AppGlobals
   public utilidadBruta1: Number = 0;//resta de ventas menos costo de ventas
   public gastosOperacion1: Number = 0;
   public utAntesIntEimp1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
-  public gastosfinancieros1: Number = 500;//valor  que no existe en la base de datos por eso queda estatico
+  public gastosfinancieros1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
   public utilidadNeta1: Number = 0;
 //Balance general
   public Efectivo1: Number = 2000;//valor  que no existe en la base de datos por eso queda estatico
@@ -32,8 +32,8 @@ export class AppGlobals
   public totalPasivo1: Number = 10000;//valor  que no existe en la base de datos por eso queda estatico
   public Patrimonio1: Number = 2500;//valor  que no existe en la base de datos por eso queda estatico
   public totalPasivomasPatri1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
-  public VentasCredito1: Number = 2500;//valor  que no existe en la base de datos por eso queda estatico
-  public ComprasCredito1: Number = 12500;//valor  que no existe en la base de datos por eso queda estatico
+  public VentasCredito1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
+  public ComprasCredito1: Number = 0;//valor  que no existe en la base de datos por eso queda estatico
   public RecCxP: Number = 0; //Recivo de cuentas por pagar de acuerdo a fechas
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ public costoVentas2: Number = 0;
 public utilidadBruta2: Number = 0;
 public gastosOperacion2: Number = 0;
 public utAntesIntEimp2: Number = 2500;
-public gastosfinancieros2: Number = 450;
+public gastosfinancieros2: Number = 0;
 public utilidadNeta2: Number = 0;
 //Balance general
 public Efectivo2: Number = 2100;
@@ -61,8 +61,8 @@ public pasivoAlargoPlazo2: Number = 7800;
 public totalPasivo2: Number = 10400;
 public Patrimonio2: Number = 2300;
 public totalPasivomasPatri2: Number = 12700;
-public VentasCredito2: Number = 2500;
-public ComprasCredito2: Number = 12500;
+public VentasCredito2: Number = 0;
+public ComprasCredito2: Number = 0;
 public RecCxP2: Number = 0; //Recivo de cuentas por pagar de acuerdo a fechas
 //--------------------------------------------------------------------------------------------------------------------
 

@@ -27,6 +27,10 @@ export class SalesService {
   {
     return this.http.get(this.domain + 'Sales/gastosOperacion/' + f1 + '/' + f2, this.options).map(res => res.json());
   }
+  getGastosFinancieros(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/GastosFinancieros/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
 
   getUtilidadNeta(f1, f2)
   {
@@ -46,6 +50,17 @@ export class SalesService {
   getCuentas_por_pagar(f1, f2)
   {
     return this.http.get(this.domain + 'Sales/Cuentas_por_pagar/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+
+  getVentasCredito(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/VentasCredito/' + f1 + '/' + f2, this.options).map(res => res.json());
+  }
+
+  getComprasCredito(f1, f2)
+  {
+    return this.http.get(this.domain + 'Sales/ComprasCredito/' + f1 + '/' + f2, this.options).map(res => res.json());
   }
 
 

@@ -7,12 +7,12 @@
       <td> Segundo Periodo</td>
     </tr>
     <tr>
-      <td> Cobertura total del pasivo </td>
+      <td> Cobertura total del pasivo </td><!-- dividiendo la utilidad antes de impuestos e intereses entre los intereses y abonos a capital del pasivo. -->
       <td style="text-aling:right"> {{(((_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1)/_global.RecCxP).toFixed(3)}}  </td>
       <td style="text-aling:right"> {{(((_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2)/_global.RecCxP2).toFixed(3)}}  </td>
     </tr>
      <tr>
-       <td>  Razón de cobertura total </td>
+       <td>  Razón de cobertura total </td><!-- divide la utilidad antes de intereses impuestos y otra erogación importante que se quiera incluir entre los intereses, abonos a capital y el monto de la erogación sustraída del dividendo, como por ejemplo el arrendamiento. -->
        <td style="text-aling:right"> {{(((_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1)/(_global.gastosOperacion1+_global.RecCxP)).toFixed(3)}} </td>
        <td style="text-aling:right"> {{(((_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2)/(_global.gastosOperacion2+_global.RecCxP2)).toFixed(3)}} </td>
      </tr>

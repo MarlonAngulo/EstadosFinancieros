@@ -54,6 +54,13 @@ console.log(this._global.RecCxP);
     });
     //---------------------------------------------------------------------------------------------
 
+    //-----------------------------GastosFinancieros-------------------------------------------------------
+    this.salesService.getGastosFinancieros(f1, f2).subscribe(data => {
+      this._global.gastosfinancieros1 = data[0].gastosFinancieros; // Assign array to use in HTML
+      console.log(this._global.gastosfinancieros1);
+    });
+    //---------------------------------------------------------------------------------------------
+
 
 
     //-----------------------------UtilidadNeta-------------------------------------------------------
@@ -81,6 +88,20 @@ console.log(this._global.RecCxP);
     this.salesService.getCuentas_por_pagar(f1, f2).subscribe(data => {
       this._global.cuentasPorPagar1 = data[0].Cuentas_por_pagar; // Assign array to use in HTML
       console.log(this._global.cuentasPorPagar1);
+    });
+    //---------------------------------------------------------------------------------------------
+
+    //-----------------------------VentasCredito-------------------------------------------------------
+    this.salesService.getVentasCredito(f1, f2).subscribe(data => {
+      this._global.VentasCredito1 = data[0].ventasCredito; // Assign array to use in HTML
+      console.log(this._global.VentasCredito1);
+    });
+    //---------------------------------------------------------------------------------------------
+
+    //-----------------------------ComprasCredito-------------------------------------------------------
+    this.salesService.getComprasCredito(f1, f2).subscribe(data => {
+      this._global.ComprasCredito1 = data[0].ventasCredito; // Assign array to use in HTML
+      console.log(this._global.ComprasCredito1);
     });
     //---------------------------------------------------------------------------------------------
     //---------------------------------------------------------------------------------------------------
@@ -127,6 +148,12 @@ console.log(this._global.ventas2);
   });
   //---------------------------------------------------------------------------------------------
 
+  //-----------------------------GastosFinancieros-------------------------------------------------------
+  this.salesService.getGastosFinancieros(f1, f2).subscribe(data => {
+    this._global.gastosfinancieros2 = data[0].gastosFinancieros; // Assign array to use in HTML
+    console.log(this._global.gastosfinancieros2);
+  });
+  //---------------------------------------------------------------------------------------------
 
   //-----------------------------UtilidadNeta-------------------------------------------------------
   this.salesService.getUtilidadNeta(f1, f2).subscribe(data => {
@@ -154,6 +181,22 @@ console.log(this._global.ventas2);
   this.salesService.getCuentas_por_pagar(f1, f2).subscribe(data => {
     this._global.cuentasPorPagar2 = data[0].Cuentas_por_pagar; // Assign array to use in HTML
     console.log(this._global.cuentasPorPagar2);
+  });
+  //---------------------------------------------------------------------------------------------
+
+
+
+  //-----------------------------VentasCredito-------------------------------------------------------
+  this.salesService.getVentasCredito(f1, f2).subscribe(data => {
+    this._global.VentasCredito2 = data[0].ventasCredito; // Assign array to use in HTML
+    console.log(this._global.VentasCredito2);
+  });
+  //---------------------------------------------------------------------------------------------
+
+  //-----------------------------ComprasCredito-------------------------------------------------------
+  this.salesService.getComprasCredito(f1, f2).subscribe(data => {
+    this._global.ComprasCredito2 = data[0].ventasCredito; // Assign array to use in HTML
+    console.log(this._global.ComprasCredito2);
   });
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------------

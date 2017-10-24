@@ -7,14 +7,14 @@
       <td> Segundo Periodo</td>
     </tr>
     <tr>
-      <td> Razón de endeudamiento </td>
-      <td style="text-aling:right"> {{ _global.totalPasivo1/_global.totalActivo1}}  </td>
-      <td style="text-aling:right"> {{ _global.totalPasivo2 /_global.totalActivo2 }}  </td>
+      <td> Razón de endeudamiento </td><!-- dividiendo el pasivo total entre el activo total -->
+      <td style="text-aling:right"> {{((_global.cuentasPorPagar1 + _global.pasivoAlargoPlazo1) / ((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1) + _global.activoFijoNeto1)).toFixed(3)}}  </td>
+      <td style="text-aling:right"> {{((_global.cuentasPorPagar2 + _global.pasivoAlargoPlazo2) / ((_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2) + _global.activoFijoNeto2)).toFixed(3) }}  </td>
     </tr>
      <tr>
-       <td> Razón pasivo capital </td>
-       <td style="text-aling:right"> {{ _global.pasivoAlargoPlazo1 / (_global.totalActivo1-_global.totalPasivo1) }} </td>
-       <td style="text-aling:right"> {{ _global.pasivoAlargoPlazo2 / (_global.totalActivo1-_global.totalPasivo2) }} </td>
+       <td> Razón pasivo capital </td><!-- dividiendo el pasivo  a largo plazo entre el capital contable.   -->
+       <td style="text-aling:right"> {{( _global.pasivoAlargoPlazo1 / (((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1) + _global.activoFijoNeto1) - (_global.cuentasPorPagar1 + _global.pasivoAlargoPlazo1))).toFixed(3) }} </td>
+       <td style="text-aling:right"> {{( _global.pasivoAlargoPlazo2 / (((_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2) + _global.activoFijoNeto2) - (_global.cuentasPorPagar2 + _global.pasivoAlargoPlazo2))).toFixed(3) }} </td>
      </tr>
 
  </table>
