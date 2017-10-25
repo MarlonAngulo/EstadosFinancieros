@@ -17,5 +17,31 @@
        <td style="text-aling:right"> {{0}} </td>
      </tr>
 
+     <tr>
+      <td> Margen neto de utilidades </td>
+      <td style="text-aling:right"> {{((_global.utilidadNeta1/_global.ventas1)*100).toFixed(3)}} % </td>
+      <td style="text-aling:right"> {{((_global.utilidadNeta2/_global.ventas2)*100).toFixed(3)}} %  </td>
+    </tr>
+    <tr>
+       <td> Rotación de activos </td>
+       <td style="text-aling:right"> {{(_global.ventas1/( (_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1)).toFixed(3)}} </td>
+       <td style="text-aling:right"> {{(_global.ventas2/((_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2)+_global.activoFijoNeto2)).toFixed(3)}} </td>
+     </tr>
+     <tr>
+       <td> Rendimiento de la inversión </td>
+       <td style="text-aling:right"> {{(_global.utilidadNeta1/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1))}} </td>
+       <td style="text-aling:right"> {{(_global.ventas2/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto2))}} </td>
+     </tr>
+     <tr>
+       <td> Rendimiento del capital común </td>
+       <td style="text-aling:right"> {{0}} </td>
+       <td style="text-aling:right"> {{0}} </td>
+     </tr>
+     <tr>
+       <td> Utilidad por acción </td>
+       <td style="text-aling:right"> {{0}} </td>
+       <td style="text-aling:right"> {{0}} </td>
+     </tr>
+
  </table>
 </div>
