@@ -66,11 +66,9 @@ public ComprasCredito2: Number = 0;
 public RecCxP2: Number = 0; //Recivo de cuentas por pagar de acuerdo a fechas
 //--------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
+public divPref: Number = 0;
+public capPref: Number = 0;
+public numeroAcciones:Number = 1000;
 
 
 }

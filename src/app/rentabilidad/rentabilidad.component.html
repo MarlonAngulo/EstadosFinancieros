@@ -8,13 +8,13 @@
     </tr>
     <tr>
       <td> Margen bruto​ de utilidad </td>
-      <td style="text-aling:right"> {{(_global.ventas1 - _global.costoVentas1)/_global.ventas1}}  </td>
-      <td style="text-aling:right"> {{(_global.ventas2 - _global.costoVentas2)/_global.ventas2  }}  </td>
+      <td style="text-aling:right"> {{(((_global.ventas1 - _global.costoVentas1)/_global.ventas1)*100).toFixed(2)}} % </td>
+        <td style="text-aling:right"> {{(((_global.ventas2 - _global.costoVentas2)/_global.ventas2)*100).toFixed(2)}} % </td>
     </tr>
      <tr>
        <td> Margen de utilidades operacionales </td>
-       <td style="text-aling:right"> {{0}} </td>
-       <td style="text-aling:right"> {{0}} </td>
+       <td style="text-aling:right"> {{((_global.ventas1 - _global.costoVentas1) - _global.gastosOperacion1)}} </td>
+       <td style="text-aling:right"> {{((_global.ventas2 - _global.costoVentas2) - _global.gastosOperacion2)}} </td>
      </tr>
 
      <tr>
@@ -24,23 +24,23 @@
     </tr>
     <tr>
        <td> Rotación de activos </td>
-       <td style="text-aling:right"> {{(_global.ventas1/( (_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1)).toFixed(3)}} </td>
-       <td style="text-aling:right"> {{(_global.ventas2/((_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2)+_global.activoFijoNeto2)).toFixed(3)}} </td>
+       <td style="text-aling:right"> {{(_global.ventas1/( (_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1)).toFixed(2)}} </td>
+       <td style="text-aling:right"> {{(_global.ventas2/((_global.Efectivo2 + _global.cuentasPorCobrar2 + _global.inventarios2)+_global.activoFijoNeto2)).toFixed(2)}} </td>
      </tr>
      <tr>
        <td> Rendimiento de la inversión </td>
-       <td style="text-aling:right"> {{(_global.utilidadNeta1/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1))}} </td>
-       <td style="text-aling:right"> {{(_global.ventas2/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto2))}} </td>
+       <td style="text-aling:right"> {{((_global.utilidadNeta1/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto1))*100).toFixed(2)}} % </td>
+       <td style="text-aling:right"> {{((_global.ventas2/((_global.Efectivo1 + _global.cuentasPorCobrar1 + _global.inventarios1)+_global.activoFijoNeto2))*100).toFixed(2)}} % </td>
      </tr>
      <tr>
        <td> Rendimiento del capital común </td>
-       <td style="text-aling:right"> {{0}} </td>
-       <td style="text-aling:right"> {{0}} </td>
+       <td style="text-aling:right"> {{((_global.utilidadNeta1 - _global.divPref)/((_global.totalActivo1 + _global.totalPasivo1)- _global.capPref)).toFixed(2)}} </td>
+       <td style="text-aling:right"> {{((_global.utilidadNeta2 - _global.divPref)/((_global.totalActivo2 + _global.totalPasivo2)- _global.capPref)).toFixed(2)}} </td>
      </tr>
      <tr>
        <td> Utilidad por acción </td>
-       <td style="text-aling:right"> {{0}} </td>
-       <td style="text-aling:right"> {{0}} </td>
+       <td style="text-aling:right"> {{(_global.utilidadNeta1/_global.numeroAcciones)}} </td>
+       <td style="text-aling:right"> {{(_global.utilidadNeta2/_global.numeroAcciones)}} </td>
      </tr>
 
  </table>
