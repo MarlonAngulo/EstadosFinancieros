@@ -17,7 +17,7 @@ import { coberturaComponent } from './cobertura/cobertura.component';
 import { endeudamientoComponent } from './endeudamiento/endeudamiento.component';
 import { estadosComponent } from './estados/estados.component';
 import { liquidezComponent } from './liquidez/liquidez.component';
-import { notasComponent } from './notas/notas.component';
+import { acercaDeComponent } from './acercaDe/acercaDe.component';
 import { periodosComponent } from './periodos/periodos.component';
 import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
 
@@ -32,7 +32,7 @@ import { SalesService } from './services/sales.service';
     endeudamientoComponent,
     estadosComponent,
     liquidezComponent,
-    notasComponent,
+    acercaDeComponent,
     periodosComponent,
     rentabilidadComponent
 

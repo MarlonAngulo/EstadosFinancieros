@@ -1,0 +1,84 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <lbd-chart
+                  [title]="'Universidad Nacional'"
+                  [subtitle]="'Integrantes'"
+                  [chartClass]="'ct-perfect-fourth'"
+                  [chartType]="emailChartType"
+                  [chartData]="emailChartData"
+                  [legendItems]="emailChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-clock-o'"
+                  [footerText]="'30/10/2017'">
+                </lbd-chart>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <lbd-chart
+                      [title]="'Division del Proyecto'"
+                      [subtitle]="'fue dividido en 3 partes'"
+                      [chartType]="activityChartType"
+                      [chartData]="activityChartData"
+                      [chartOptions]="activityChartOptions"
+                      [chartResponsive]="activityChartResponsive"
+                      [legendItems]="activityChartLegendItems"
+                      [withHr]="true"
+                      [footerIconClass]="'fa fa-check'"
+                      [footerText]="'30/10/2017'">
+                    </lbd-chart>
+                </div>
+                <div class="col-md-6">
+        </div>
+        <table  class="table table-striped" border="1">
+
+          <tr>
+            <td> Grupos de trabajo</td>
+            <td> Tareas Asignadas</td>
+
+          </tr>
+          <tr>
+            <td> Grupo 1<br>
+              Marlon Angulo Segura,
+              Derian Chavarría Zúñiga,
+              Jiandro Sibaja Granados
+
+             </td><!-- dividiendo el pasivo total entre el activo total -->
+            <td style="text-aling:right"> Este grupo trabajo en la elaboracion del diseño y estructura de la apliacaion
+              asi como en la conexion de frond end y back end y de la base de datos y elaboro las dos primeras razones financieras </td>
+
+          </tr>
+
+           <tr>
+             <td> Grupo 2
+               <br>
+               Alexander Venegas Gonzales,
+               Maylin Corrales Espinoza,
+               Brayner Rosales Solís
+
+              </td><!-- dividiendo el pasivo total entre el activo total -->
+              <td style="text-aling:right">Este grupo trabajo en la conexion de frond end y back end y
+                de la base de datos y elaboro las dos ultimas razones financieras  </td>
+           </tr>
+           <tr>
+
+           </tr>
+           <tr>
+             <td> Fuentes Consultadas
+              </td>
+              <td>
+                <br>
+                Estudiante: Susan Valverde Villanueva(Administracion de empresas UNA)
+                <br>
+                Lic: Ingeniero en Sistemas Juan Gamboa Abarca(UNA)
+
+
+               </td><!-- dividiendo el pasivo total entre el activo total -->
+           </tr>
+
+
+
+       </table>
+
+</div>

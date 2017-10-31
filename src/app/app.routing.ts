@@ -7,7 +7,7 @@ import { coberturaComponent } from './cobertura/cobertura.component';
 import { endeudamientoComponent } from './endeudamiento/endeudamiento.component';
 import { estadosComponent } from './estados/estados.component';
 import { liquidezComponent } from './liquidez/liquidez.component';
-import { notasComponent } from './notas/notas.component';
+import { acercaDeComponent } from './acercaDe/acercaDe.component';
 import { periodosComponent } from './periodos/periodos.component';
 import { rentabilidadComponent } from './rentabilidad/rentabilidad.component';
 
@@ -16,7 +16,7 @@ const routes: Routes =[
     { path: 'endeudamiento',           component: endeudamientoComponent },
     { path: 'estados',          component: estadosComponent },
     { path: 'liquidez',     component: liquidezComponent },
-    { path: 'notas',          component: notasComponent },
+    { path: 'acercaDe',          component: acercaDeComponent },
     { path: 'periodos',           component: periodosComponent },
     { path: 'rentabilidad',  component: rentabilidadComponent },
       { path: '',          redirectTo: 'dashboard', pathMatch: 'full' }

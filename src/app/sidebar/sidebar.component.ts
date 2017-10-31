@@ -14,7 +14,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'endeudamiento', title: 'R de Endeudamiento',  icon:'pe-7s-science', class: '' },
     { path: 'rentabilidad', title: 'R de Rentabilidad',  icon:'pe-7s-map-marker', class: '' },
     { path: 'cobertura', title: 'R de Cobertura',  icon:'pe-7s-bell', class: '' },
-    //{ path: 'notas', title: 'Notas',  icon:'pe-7s-rocket', class: 'active-pro' },
+    { path: 'acercaDe', title: 'Acerca De',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 
 @Component({

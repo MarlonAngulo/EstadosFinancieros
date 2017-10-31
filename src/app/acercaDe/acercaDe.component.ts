@@ -4,11 +4,11 @@ import { LegendItem, ChartType } from '../lbd/lbd-chart/lbd-chart.component';
 import * as Chartist from 'chartist';
 
 @Component({
-  selector: 'app-notas',
-  templateUrl: './notas.component.html',
-  styleUrls: ['./notas.component.css']
+  selector: 'app-acercaDe',
+  templateUrl: './acercaDe.component.html',
+  styleUrls: ['./acercaDe.component.css']
 })
-export class notasComponent implements OnInit {
+export class acercaDeComponent implements OnInit {
     public emailChartType: ChartType;
     public emailChartData: any;
     public emailChartLegendItems: LegendItem[];
@@ -29,13 +29,16 @@ export class notasComponent implements OnInit {
   ngOnInit() {
       this.emailChartType = ChartType.Pie;
       this.emailChartData = {
-        labels: ['62%', '32%', '6%'],
-        series: [62, 32, 6]
+        labels: ['16%', '16%', '16%','16%','16%','16%'],
+        series: [16, 16, 16,16,16,16]
       };
       this.emailChartLegendItems = [
-        { title: 'Open', imageClass: 'fa fa-circle text-info' },
-        { title: 'Bounce', imageClass: 'fa fa-circle text-danger' },
-        { title: 'Unsubscribe', imageClass: 'fa fa-circle text-warning' }
+        { title: 'Marlon ', imageClass: 'fa fa-circle text-info' },
+        { title: 'Derian', imageClass: 'fa fa-circle text-danger' },
+        { title: 'Jiandro', imageClass: 'fa fa-circle text-warning' },
+        { title: 'Alex', imageClass: 'fa fa-circle text-warning' },
+        { title: 'Maylin', imageClass: 'fa fa-circle text-warning' },
+        { title: 'Brayner', imageClass: 'fa fa-circle text-warning' },
       ];
 
       this.hoursChartType = ChartType.Line;
@@ -78,10 +81,10 @@ export class notasComponent implements OnInit {
 
       this.activityChartType = ChartType.Bar;
       this.activityChartData = {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        labels: ['Diseño y Estructura', 'Conexion con DB', 'Razones Financieras'],
         series: [
-          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-          [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+          [300, 500, 450]
+
         ]
       };
       this.activityChartOptions = {
@@ -102,8 +105,8 @@ export class notasComponent implements OnInit {
         }]
       ];
       this.activityChartLegendItems = [
-        { title: 'Tesla Model S', imageClass: 'fa fa-circle text-info' },
-        { title: 'BMW 5 Series', imageClass: 'fa fa-circle text-danger' }
+        { title: 'Importancia otorgada', imageClass: 'fa fa-circle text-info' }
+      //  { title: 'BMW 5 Series', imageClass: 'fa fa-circle text-danger' }
       ];
 
 
